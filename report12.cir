@@ -1,0 +1,18 @@
+* title : high pass filter
+
+* netlist
+R1 2 0 .007
+C1 1 2 1136n
+Vin 1 0 dc 0 ac 1s
+*Comment
+
+.control
+*Comment
+ac dec 10 1 1000Meg
+*Comment
+set color0 = white
+set color1 = black
+set color2 = blue
+*Comment
+plot vdb(2)
+.endc

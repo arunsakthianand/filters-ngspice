@@ -1,0 +1,18 @@
+* title : low pass filter
+
+* netlist
+R1 2 1 7
+C1 2 0 1136n
+Vin 1 0 dc 1 ac 1
+*Comment
+
+.control
+*Comment
+ac dec 10 1 1Meg
+*Comment
+set color0 = white
+set color1 = black
+set color2 = blue
+*Comment
+plot vdb(2)
+.endc
